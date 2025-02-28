@@ -1,0 +1,62 @@
+@import url("https://fonts.cdnfonts.com/css/neutra-text");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Neutra Text", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #322625;
+  background-color: #ebebeb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Neutra Text", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ebebeb;
+}
+
+@layer base {
+  td,
+  th {
+    font-size: 14px;
+  }
+
+  th {
+    font-weight: 600;
+  }
+
+  h1 {
+    @apply text-4xl font-bold text-[#322625];
+  }
+  h2 {
+    @apply text-3xl font-bold text-[#322625];
+  }
+  h3 {
+    @apply text-2xl font-bold text-[#322625];
+  }
+  h4 {
+    @apply text-xl font-bold text-[#322625];
+  }
+  h5 {
+    @apply text-lg font-bold text-[#322625];
+  }
+  h6 {
+    @apply text-base font-bold text-[#322625];
+  }
+  a {
+    @apply text-[#c0e3e5] hover:text-[#a8d0d1] transition duration-300;
+  }
+  button {
+    @apply bg-[#fdc936] text-[#322625] px-4 py-2 rounded-lg hover:bg-[#edb82a] transition duration-300;
+  }
+}
